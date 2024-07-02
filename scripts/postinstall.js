@@ -12,7 +12,11 @@ const fs = require( 'fs' );
 const { execSync } = require( 'child_process' );
 
 // CKEditor 5.
-require( 'husky' ).install();
+import( 'husky' ).then( husky => {
+	husky.install();
+} ).catch( () => {
+	process.exit( 1 );
+} );
 
 // External repositories.
 const EXTERNAL_DIR_PATH = path.resolve( __dirname, '..', 'external' );
