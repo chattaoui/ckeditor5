@@ -1,8 +1,12 @@
 {
-  "name": "ckeditor5",
-  "version": "41.4.2",
+  "name": "@chattaoui/ckeditor5",
+  "version": "41.4.8",
   "description": "The development environment of CKEditor 5 - the best browser-based rich text editor.",
-  "private": true,
+  "private": false,
+  "files": [
+    "packages",
+    "scripts/postinstall.js"
+  ],
   "keywords": [
     "ckeditor",
     "ckeditor5",
